@@ -1,0 +1,10 @@
+FormIff. Formula ::= "Iff" Formula Formula1;
+FormImplies. Formula1 ::= "Implies" Formula1 Formula2;
+FormOr. Formula2 ::= "Or" Formula2 Formula3;
+FormAnd. Formula3 ::= "And" Formula3 Formula4;
+FormNot. Formula4 ::= "Not" Formula4;
+FormVar. Formula5 ::= "Var" String;
+FormFalse. Formula5 ::= "F";
+FormTrue. Formula5 ::= "T";
+
+coercions  Formula 5;
