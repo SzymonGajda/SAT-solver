@@ -74,7 +74,7 @@ CNF DPLL::eliminatePureLiterals(CNF cnf) {
 }
 
 String DPLL::getSplittingLiterals(const CNF &cnf) {
-    std::vector<std::pair<int, String>> res;
+    std::vector<std::pair<int, String> > res;
     std::map<String, int> map;
     for (const auto &cl : cnf.cnf) {
         for (const auto &l : cl.clause) {
